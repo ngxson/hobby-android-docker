@@ -15,6 +15,12 @@ if ! command -v "docker" &> /dev/null; then
   exit 1
 fi
 
+KVM_CHECK="$(ls /dev/kvm)"
+if [[ -z "$KVM_CHECK" ]]; then
+  echo "ERROR: KVM is not supported on your device"
+  exit 1
+fi
+
 Help()
 {
   # Display Help
