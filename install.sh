@@ -1,7 +1,7 @@
 #!/bin/bash
 
 EMULATOR_DEVICE="Samsung Galaxy S10"
-PORT="6080"
+PORT="443"
 IMAGE="budtmo/docker-android:emulator_11.0"
 SHOULD_RUN="1"
 
@@ -32,7 +32,7 @@ Help()
   echo "g     Only generate docker-compose file and exit, do not run."
   echo "l     Print logs then exit."
   echo "s     Stop then exit."
-  echo "p     Set port number; default is 6080"
+  echo "p     Set port number; default is 443"
   echo "i     Set the image; default is 'budtmo/docker-android:emulator_11.0'"
   echo "d     Set the device; default is 'Samsung Galaxy S10'"
   echo
